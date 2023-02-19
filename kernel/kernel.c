@@ -2,10 +2,10 @@
 #include <stddef.h>
 #include <limine.h>
 #include <term.h>
+#include <libc/stdio.h>
 
 void _start(void) 
 {
-    term_init();
-	term_print_str("Hello World");
+    printf("Hello %s World!\n", "Formatted");
     for (;;) { __asm__("hlt"); }
 }

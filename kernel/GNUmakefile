@@ -21,10 +21,10 @@ CC = clang
 LD = ld
 
 # User controllable CFLAGS.
-CFLAGS ?= -g -O2 -pipe -Wall -Wextra -Iinclude/
+CFLAGS ?=
 
 # User controllable preprocessor flags. We set none by default.
-CPPFLAGS ?=
+CPPFLAGS ?= -g -O2 -pipe -Wall -Wextra -Iinclude/
 
 # User controllable nasm flags.
 NASMFLAGS ?= -F dwarf -g

@@ -1,4 +1,4 @@
-#include <term.h>
+#include <term/term.h>
 
 static volatile struct limine_terminal_request terminal_request = {
     .id = LIMINE_TERMINAL_REQUEST,
